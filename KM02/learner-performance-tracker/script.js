@@ -9,16 +9,58 @@ const learners = [
         studentNumber: "ST001",
         name: "Ryan",
         surname: "Ward",
-        score: 49,
-        attendance: 76,
+        score: 85,
+        attendance: 91,
         isSubmitted: true
+    },
+    {
+        studentNumber: "ST002",
+        name: "Brandon",
+        surname: "De Wet",
+        score: 87,
+        attendance: 91,
+        isSubmitted: true
+    },
+    {
+        studentNumber: "ST003",
+        name: "Elton",
+        surname: "Williams",
+        score: 74,
+        attendance: 80,
+        isSubmitted: true
+    },
+      {
+        studentNumber: "ST004",
+        name: "Johan",
+        surname: "Kruger",
+        score: 68,
+        attendance: 74,
+        isSubmitted: true
+    },
+      {
+        studentNumber: "ST005",
+        name: "Peter",
+        surname: "Parker",
+        score: 89,
+        attendance: 40,
+        isSubmitted: false
+    },
+      {
+        studentNumber: "ST006",
+        name: "Tim",
+        surname: "Drake",
+        score: 49,
+        attendance: 64,
+        isSubmitted: false
     }
 ]
 
+console.log(learners);
+
 function getCompeteny(learners){
-    if (learners.score >= 80) {
+    if (learners.score >= 80 && learners.attendance >=90 && learners.isSubmitted === true) {
         return "Excellent";
-    } else if (learners.score >=50) {
+    } else if (learners.score >=50 && learners.attendance >=80 && learners.isSubmitted === true) {
         return "Competent";
     } else {
         return "Does not meet the requirements for Excellent or Competent";
