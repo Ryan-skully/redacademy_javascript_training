@@ -1,0 +1,20 @@
+/* Styles the main heading */
+h1 {
+    color: #800c10;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #b22025;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Runs when the mouse moves over the button */
+button:hover {
+    background-color: #8f1a1f;
+}

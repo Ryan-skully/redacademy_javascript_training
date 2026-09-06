@@ -1,9 +1,3 @@
-/*const learners = ["Ryan Ward", "Caleb Ward", "Brandon De Wet", "Peter Parker", "Bruce Wanye"];
-
-console.log("First Name:", learners[0].split(" ")[0]);
-console.log("Surname:", learners[0].split(" ")[1]);
-console.log("Number of learners:", learners.length);*/
-
 const learners = [
     {
         studentNumber: "ST001",
@@ -55,17 +49,35 @@ const learners = [
     }
 ]
 
-console.log(learners);
+//console.log(learners);
 
-function getCompeteny(learners){
-    if (learners.score >= 80 && learners.attendance >=90 && learners.isSubmitted === true) {
-        return "Excellent";
-    } else if (learners.score >=50 && learners.attendance >=80 && learners.isSubmitted === true) {
-        return "Competent";
-    } else {
-        return "Does not meet the requirements for Excellent or Competent";
+function getLearnerStatus(learners) {
+    for (let marks of learners) {
+
+         let iscompetency;
+
+         if (marks.score >= 80 && marks.attendance >=90 && marks.isSubmitted === true){
+            marks.iscompetency = "Excellent";
+         }else if (marks.score >=50 && marks.attendance >=80 && marks.isSubmitted === true){
+            marks.iscompetency = "Competent";
+         }else{
+            marks.iscompetency = "Does not meet the requirement";
+         }
+console.log("====================",
+    "Learner Report",
+    "===================="
+)
+console.log(`
+StudentNumber: '${marks.studentNumber}',
+Name: '${marks.name}',
+Score: '${marks.score},
+Attendance: '${marks.attendance},
+Submitted: '${marks.isSubmitted},
+Competency: '${marks.iscompetency}`);
+console.log("========================================================")
     }
 }
+getLearnerStatus(learners); //This function will give the the layout of all learners and their marks on the webpage
 
 function searchLearner() {
 
@@ -78,7 +90,7 @@ function searchLearner() {
 
     if(learner) {
 
-        const competency = getCompeteny(learner);
+        const competency = getLearnerStatus(learner);
 
         let result = "";
             //This check if any of the categories were met to decide if the learn passed of failed.
@@ -105,5 +117,3 @@ function searchLearner() {
     }
 
 }
-
-console.log(getCompeteny(learners[0])); //Looks up the students number and reads the rest of the Array
