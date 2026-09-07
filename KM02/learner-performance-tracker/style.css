@@ -1,20 +1,25 @@
+/* Styles the entire page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Styles the card in the middle of the page */
+.page-card {
+    width: 90%;
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgb(241, 119, 119);
+    border-style: solid;
+}
+
 /* Styles the main heading */
 h1 {
     color: #800c10;
-}
-
-button {
-    margin-top: 15px;
-    padding: 12px 20px;
-    background-color: #b22025;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Runs when the mouse moves over the button */
-button:hover {
-    background-color: #8f1a1f;
 }
