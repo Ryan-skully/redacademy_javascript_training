@@ -136,4 +136,4 @@ console.log("Prices above 100:"+ highPrices);
 // Use reduce() to calculate the total price of those filtered items
 const totalPrice = highPrices.reduce((sum, price) => sum + price, 0);
 console.log("Total Price: R"+totalPrice.toFixed(2));*/
->>>>>>> 107db37076f07df6b1b824f02b505e923a5a8cb1
+
