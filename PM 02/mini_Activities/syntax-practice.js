@@ -80,6 +80,7 @@ function calculateFinalTotal (Item) {
 const total = calculateFinalTotal(250);
 console.log("VAT:" , vatAmount , "Total:", total);*/
 
+<<<<<<< HEAD
 //Topic 7
 
 let learnersName = ["Ryan Wa","Brandon DW", "Phindi M", "Shane D", "Ryan W"];
@@ -91,3 +92,61 @@ learnersName.push("TestUser1");
 learnersName.shift();
 console.log(learnersName);
 
+=======
+// Topic 7 Mini Activity
+/*let learnersName = ["Ryan Ward","Brandon DeWet", "Phindi M", "Shane D", "Ryan Williams"];
+
+const firstName = learnersName.map(name => name.split(" ")[0]);
+const surnames = learnersName.map(name => name.split(" ")[1]);
+console.log(firstName); //First Name to display
+console.log(surnames); // Surname to display
+console.log(learnersName[0]); // display first user
+console.log(learnersName[4]); // display last user 
+console.log(learnersName.length); // get length of array
+learnersName.push("Johan Kruger"); // adds learner
+learnersName.shift(); // removes 1st user
+console.log(learnersName);*/
+
+// Topic 8 Mini Activity
+/*const tickets = [
+  { id: 101, priority: "High" },
+  { id: 102, priority: "Low" },
+  { id: 103, priority: "High" },
+  { id: 104, priority: "Medium" },
+  { id: 105, priority: "High" }
+];
+
+// Initialize a counter variable
+let highPriorityCount = 0;
+
+for (const ticket of tickets) {
+  if (ticket.priority === "High") {
+    highPriorityCount++;
+  }
+}
+console.log("Number of High priority tickets:", highPriorityCount);*/
+
+// Topic 9 Mini Activity
+/*function calculateNetPay(grossPay) {
+  const taxRate = 0.20; // 20% tax rate local constant
+  const netPay = grossPay * (1 - taxRate);
+  return netPay;
+}
+
+console.log("Net Pay:", calculateNetPay(1000)); // Output: 800
+console.log(taxRate);*/
+
+//Topic 10 Mini Activity
+/*const prices = [50, 80, 120, 150, 200];
+console.log("Original Prices:" + prices);
+
+// Use map() to create pricesWithVat (adding 15% VAT)
+const pricesWithVat = prices.map(price => price * 1.15);
+console.log("Prices with VAT: "+ pricesWithVat);
+// Use filter() to keep only prices above 100
+const highPrices = pricesWithVat.filter(price => price > 100);
+console.log("Prices above 100:"+ highPrices);
+// Use reduce() to calculate the total price of those filtered items
+const totalPrice = highPrices.reduce((sum, price) => sum + price, 0);
+console.log("Total Price: R"+totalPrice.toFixed(2));*/
+>>>>>>> 107db37076f07df6b1b824f02b505e923a5a8cb1
