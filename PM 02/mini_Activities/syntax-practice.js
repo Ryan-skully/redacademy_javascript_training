@@ -80,19 +80,6 @@ function calculateFinalTotal (Item) {
 const total = calculateFinalTotal(250);
 console.log("VAT:" , vatAmount , "Total:", total);*/
 
-<<<<<<< HEAD
-//Topic 7
-
-let learnersName = ["Ryan Wa","Brandon DW", "Phindi M", "Shane D", "Ryan W"];
-
-console.log(learnersName[0]); //Ryan Wa  
-console.log(learnersName[4]); // Ryan W
-console.log(learnersName.length);
-learnersName.push("TestUser1");
-learnersName.shift();
-console.log(learnersName);
-
-=======
 // Topic 7 Mini Activity
 /*let learnersName = ["Ryan Ward","Brandon DeWet", "Phindi M", "Shane D", "Ryan Williams"];
 
