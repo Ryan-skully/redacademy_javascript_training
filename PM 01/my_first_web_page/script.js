@@ -1,15 +1,13 @@
-// Find the HTML element with the ID welcomeButton.
+alert("Welcome to JavaScript Fundamentals!");
+
+console.log("The script.js file has loaded successfully.");
+
 const welcomeButton = document.getElementById("welcomeButton");
+const message = document.getElementById("message");
 
-// Confirm that the page loaded.
-console.log("The page loaded successfully.");
-
-// Listen for a click on the button.
-welcomeButton.addEventListener("click", function () {
-
-    // Display a popup message to the user.
-    alert("Welcome! This message was displayed using JavaScript.");
-
-    // Record the action in the browser console.
+welcomeButton.addEventListener("click", function(){
+    alert("Well done! You clicked the JavaScript button");
+    message.textContent = "JaveScript changed this message on the page.";
     console.log("The welcome button was clicked.");
+    console.log("The page message was updated.");
 });
