@@ -1,0 +1,25 @@
+/*Add CSS Classes with JavaScript
+
+
+/* Styles the entire page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Styles the main heading */
+h1 {
+    color: #800c10;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.low-stock {
+    border: 2px solid orange;
+    background: #fff5dd;
+}
