@@ -1,4 +1,4 @@
-/*Topic 1
+/*Topic 1 Mini Activity
 
 let learnerName = "Ryan";
 let department = "DevOps";
@@ -8,7 +8,7 @@ console.log("Name:", learnerName);
 console.log("Departmant:", department);
 console.log(openTickets);*/
 
-/*//Topic 2
+/*//Topic 2 Mini Activity
 
 const requestId = "Dev123";
 const departmentName = "DevOps";
@@ -18,7 +18,7 @@ let isApproved = false;
 
 console.log("ID:", requestId, "Department:", departmentName, "Item:", itemRequested, "Quantity", quantity, "Approved", isApproved);*/
 
-/*//Topic 3
+/*//Topic 3 Mini Activity
 
 const learnerProfile = {
     fullName: "Ryan",
@@ -31,7 +31,7 @@ const learnerProfile = {
 
 console.log(typeof learnerProfile);*/
 
-/* //Topic 4
+/* //Topic 4 Mini Activity
 
 let itemPrice= 25.99;
 let quantity= 7;
@@ -50,7 +50,7 @@ console.log("VatRate R:", vatAmount); //VatRate
 const finalTotal = subTotal - discountedSubtotal + vatRate;
 console.log("Final Cost: R", finalTotal); //Final Cost */
 
-/*//Topic 5
+/*//Topic 5 Mini Activity
 
 let availableLeaveDays = 10;
 let requestedLeaveDays = 4;
@@ -67,7 +67,7 @@ if (requestedLeaveDays === 0) {
     }
     else (console.log("tHANKS "));*/
 
-/*//Topic 6
+/*//Topic 6 Mini Activity
 const vatAmount = 0.15;
 function calculateVat (Item) {
     // const vatAmount = 0.15;
