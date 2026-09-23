@@ -80,8 +80,8 @@ function calculateFinalTotal (Item) {
 const total = calculateFinalTotal(250);
 console.log("VAT:" , vatAmount , "Total:", total);*/
 
-// Topic 7 Mini Activity
-/*let learnersName = ["Ryan Ward","Brandon DeWet", "Phindi M", "Shane D", "Ryan Williams"];
+/*// Topic 7 Mini Activity
+let learnersName = ["Ryan Ward","Brandon DeWet", "Phindi M", "Shane D", "Ryan Williams"];
 
 const firstName = learnersName.map(name => name.split(" ")[0]);
 const surnames = learnersName.map(name => name.split(" ")[1]);
@@ -94,8 +94,8 @@ learnersName.push("Johan Kruger"); // adds learner
 learnersName.shift(); // removes 1st user
 console.log(learnersName);*/
 
-// Topic 8 Mini Activity
-/*const tickets = [
+/*// Topic 8 Mini Activity
+const tickets = [
   { id: 101, priority: "High" },
   { id: 102, priority: "Low" },
   { id: 103, priority: "High" },
@@ -113,8 +113,8 @@ for (const ticket of tickets) {
 }
 console.log("Number of High priority tickets:", highPriorityCount);*/
 
-// Topic 9 Mini Activity
-/*function calculateNetPay(grossPay) {
+/*// Topic 9 Mini Activity
+function calculateNetPay(grossPay) {
   const taxRate = 0.20; // 20% tax rate local constant
   const netPay = grossPay * (1 - taxRate);
   return netPay;
@@ -123,8 +123,8 @@ console.log("Number of High priority tickets:", highPriorityCount);*/
 console.log("Net Pay:", calculateNetPay(1000)); // Output: 800
 console.log(taxRate);*/
 
-//Topic 10 Mini Activity
-/*const prices = [50, 80, 120, 150, 200];
+/*//Topic 10 Mini Activity
+const prices = [50, 80, 120, 150, 200];
 console.log("Original Prices:" + prices);
 
 // Use map() to create pricesWithVat (adding 15% VAT)
