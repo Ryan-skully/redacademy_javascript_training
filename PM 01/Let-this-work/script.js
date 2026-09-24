@@ -1,17 +1,49 @@
-alert("Welcome to JavaScript Fundamentals!");
+// Find the customer message button.
+const customerButton =
+    document.getElementById("customerButton");
 
-console.log("The script.js file has loaded successfully.");
+// Find the paragraph that will display the message.
+const storeMessage =
+    document.getElementById("storeMessage");
 
-const welcomeButton = document.getElementById("welcomeButton");
-const message = document.getElementById("message");
+// Confirm that the JavaScript file loaded.
+console.log("Lewis Store page loaded successfully.");
 
-welcomeButton.addEventListener("click", function(){
-    alert("This updated was made on a Git branch");
-    message.textContent = "JaveScript changed this message on the page.";
-    console.log("Branch update tested successfully.");
-    console.log("The welcome button was clicked.");
-    console.log("The page message was updated.");
+// Run this code when the button is clicked.
+customerButton.addEventListener("click", function () {
+
+    // Change the text displayed on the web page.
+    storeMessage.textContent =
+        "Welcome! Please speak to a sales consultant if you need assistance.";
+
+    // Display a browser popup.
+    alert("Thank you for visiting Lewis Furniture Store.");
+
+    // Record the click for testing.
+    console.log("The customer message was displayed.");
 });
 
-console.log("The page has loaded.");
-console.log("The learner is testing JavaScript output");
+// Find the theme button.
+const themeButton = document.getElementById("themeButton");
+
+// Listen for a click.
+themeButton.addEventListener("click", function () {
+
+    // Add or remove the dark-theme class.
+    document.body.classList.toggle("dark-theme");
+
+    console.log("The page theme was changed.");
+});
+
+const welcomeButton =
+    document.getElementById("welcomeButton");
+
+welcomeButton.addEventListener("click", function () {
+    alert("Welcome to JavaScript!");
+});
+
+
+// This message will appear in the browser console.
+// It confirms that the JavaScript file is connected correctly.
+
+console.log("The JavaScript file loaded successfully.");
