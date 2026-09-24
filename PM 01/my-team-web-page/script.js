@@ -24,7 +24,7 @@ themeButton.addEventListener("click", function () {
     alert("This is what the LDS team does");
 
     // Record the click for testing.
-    console.log("The learn more button was clicked");
+    console.log("The button was clicked");
 });
 
 console.log("The page has loaded successfully.");
