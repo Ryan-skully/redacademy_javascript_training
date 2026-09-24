@@ -1,2 +1,1 @@
-# first_jarascript_lesson
-Lesson done in class
+Please see work document called Ryan Ward PM-01.docx in the evidence folder for PM01.
