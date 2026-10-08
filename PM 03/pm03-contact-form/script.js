@@ -64,5 +64,73 @@ function getDepartmentLebel(code) {
 console.log(getDepartmentLebel("support"));
 console.log(getDepartmentLebel("finance"));*/
 
-const form = document.querySelector("#contactForm");
+
+/*const form = document.querySelector("#contactForm");
 const nameInput = document.querySelector("#name");
+const departmentSelect = document.querySelector("#department");
+const output = document.querySelector("#outputMessage");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    let enteredName = nameInput.value.trim();
+    let selectedDepartment = departmentSelect.value;
+
+    console.log("Name:", enteredName);
+    console.log("Department:", selectedDepartment);
+
+    output.textContent = "Your request was captured successfully."
+    output.className = "message success";
+    //or
+    output.style.color = "green";
+});*/
+
+const list = document.querySelector("#submissionList");
+const item = document.createElement("li");
+item.textContent = "New request added by Aisha from Helpdesk";
+list.appendChild(item);
+
+const clearButton = document.querySelector("#clearButton");
+
+clearButton.addEventListener("click", function(){
+    list.innerHTML = "";
+    console.log("Status has been cleared");
+    
+});
+
+const helpButton = document.querySelector("#helpButton");
+const outputHelp = document.querySelector("#outputMessage");
+
+helpButton.addEventListener("click", function(){
+    output.textContent = "Please complete all required fields before submitting";
+});
+
+const submitForm = document.querySelector("#contactForm");
+
+submitForm.addEventListener("submit", function (event){
+    event.preventDefault();
+
+    console.log("The form was submitted.");
+
+    const nameInput = document.querySelector("#name");
+    const departmentSelect = document.querySelector("#department");
+    const reportInput = document.querySelector("#Report");
+
+    console.log("Name:", nameInput.value);
+    console.log("Department:", departmentSelect.value);
+    console.log("Report:", reportInput.value);
+});
+
+const messageInput = document.querySelector("#message");
+const characterCount = document.querySelector("#characterCount");
+
+messageInput.addEventListener("input", function(){
+    characterCount.textContent = messageInput.value.length
+});
+
+function isValidEmail(email){
+    return email.includes("@") && email.includes(".");
+}
+
+console.log(isValidEmail("user@example.com")); //true
+console.log(isValidEmail("userexample.com")); //fasle
