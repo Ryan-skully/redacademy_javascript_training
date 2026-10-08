@@ -128,9 +128,33 @@ messageInput.addEventListener("input", function(){
     characterCount.textContent = messageInput.value.length
 });
 
-function isValidEmail(email){
-    return email.includes("@") && email.includes(".");
+function isValidEmail(email) {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
 }
+
+const emailForm = document.querySelector("#emailForm");
+const emailInput = document.querySelector("#email");
+const emailResult = document.querySelector("#emailResult");
+
+function showEmailMessage(text, type) {
+    emailResult.textContent = text;
+    emailResult.className = "message " + type;
+}
+
+emailForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = emailInput.value.trim();
+
+    if (isValidEmail(email)) {
+        console.log("Valid email address.");
+        showEmailMessage("Email address is valid.", "success");
+    } else {
+        console.log("ERROR: Invalid email address.");
+        showEmailMessage("Please enter a valid email address.", "error");
+    }
+});
 
 console.log(isValidEmail("user@example.com")); //true
 console.log(isValidEmail("userexample.com")); //fasle
