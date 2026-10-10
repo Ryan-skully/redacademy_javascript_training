@@ -4,6 +4,36 @@ function showMessage(){
 
 showMessage();
 
+const mockUsers = [
+    {
+        name: "Aisha Khan",
+        email: "aisha.khan@example.com",
+        company: {name: "Internal Helpdesk"}
+    },
+    {
+        name: "Daniel Jacobs",
+        email: "daniel.jacobs@example.com",
+        company: {name: "Software Support"}
+    },
+    {
+        name: "Nokuthula Maseko",
+        email: "nokuthuka.maseko@example.com",
+        company: {name: "Internal Helpdesk"}
+    },
+
+]
+
+function displayUsers(users) {
+    users.forEach(function(user) {
+        console.log("Name: " + user.name);
+        console.log("Email: " + user.email);
+        console.log("Company: " + user.company.name);
+        console.log("--------------------");
+    });
+}
+
+displayUsers(mockUsers);
+
 /*let departmentName = "Helpdesk";
 console.log(departmentName);
 
@@ -155,6 +185,48 @@ emailForm.addEventListener("submit", function(event) {
         showEmailMessage("Please enter a valid email address.", "error");
     }
 });
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(users){
+        console.log(users);
+    })
+    .catch(function(error){
+        console.error("API error:", error.message);
+    });
+
+async function getUsers() {
+    try {
+        const response = await fetch ("https://jsonplaceholder.typicode.com/users");
+        const users = await response.json();
+        console.log(users);
+    }catch(error){
+        console.error("Could not load users:", error.message);
+    }
+    
+}
+async function loadTasks() {
+    try {
+        const response = await fetch(
+            "https://jsonplaceholder.typicode.com/todos"
+        );
+
+        const tasks = await response.json();
+
+        const firstFiveTasks = tasks.slice(0, 5);
+
+        firstFiveTasks.forEach(function(task) {
+            console.log(task.title, task.completed);
+        });
+
+    } catch (error) {
+        console.error("Error loading tasks:", error);
+    }
+}
+
+loadTasks();
 
 console.log(isValidEmail("user@example.com")); //true
 console.log(isValidEmail("userexample.com")); //fasle

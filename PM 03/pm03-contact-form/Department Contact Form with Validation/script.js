@@ -90,7 +90,7 @@ async function loadApiData() {
         const user = await response.json();
         displayUsers(useSyncExternalStore.slice(0, 5));
     }catch(error){
-        console.error("API error:", error.message);
+        console.error("Could not load users:", error.message);
         apiOutput.innerHTML = "<p>Could not load API data. Please try again later.</p>";
     }
 }
