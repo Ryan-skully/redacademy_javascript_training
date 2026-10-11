@@ -16,6 +16,79 @@
 
             </p>
         </main>
+        <!--<form id="contactForm">
+
+            <input type="text" id="name" placeholder="Enter your name">
+
+                <select id="department">
+                    <option value="">Select Department</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Helpdesk">Helpdesk</option>
+                    <option value="Orion">Orion</option>
+                </select>
+
+            <button type="submit">Submit</button>
+
+            <div id="outputMessage"></div>
+
+        </form>-->
+
+        <h3>Submission History</h3>
+
+        <ul id="submissionList"></ul>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Enter your name">
+
+                <select id="department">
+                    <option value="">Select Department</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Helpdesk">Helpdesk</option>
+                    <option value="Orion">Orion</option>
+                </select>
+
+            <input type="text" id="Report" placeholder="Explain Error.">
+
+                <p></p>
+            
+
+            <button type="submit">Submit Form</button>
+
+            <div id="outputMessage"></div>
+
+        </form>
+        <p></p>
+
+        <form id="emailForm">
+
+            <label for="email">Email Address:</label>
+
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <button type="submit">Submit</button>
+
+            <div id="emailResult"></div>
+
+        </form>
+
+        <p id="emailMessage"></p>
+
+        <textarea id="message" placeholder="Type your message here"></textarea>
+
+        <p>Characters: <span id="characterCount">0</span></p>
+
+        <button id="clearButton">Clear Status</button>
+
+        <button id="helpButton">Need Help?</button>
+
+        <button id="detailsButton">Show Details</button>
+        <div id="detailsPanel" hidden> Extra support information..</div>
+
+        <p id="outputMessage">Success! Your task is complete.</p>
+
+        <button onclick="showSuccessAnimation()">Test Animation</button>
+
         <script src="script.js"></script>
     </body>
 </html>

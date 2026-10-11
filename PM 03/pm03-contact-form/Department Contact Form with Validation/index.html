@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Deprtment Contact Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Department Contact Form</h1>
+            <p class="intro">
+                Use this form to submit a department request or support message.
+            </p>
+
+            <form id="contactForm" novalidate>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Example: Aisha Khan">
+
+                <label for="department">Department</label>
+                <select id="department">
+                    <option value="">-- Select department --</option>
+                    <option value="Helpdesk">Helpdesk</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Software Support">Software Support</option>
+                    <option value="Junior Software Engineering">Junior Software Engineering</option>
+                </select>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Example: user@company.co.za">
+
+                <label for="category">Issue Category</label>
+                <select id="category">
+                    <option value="">-- Select category --</option>
+                    <option value="Access Request">Access Request</option>
+                    <option value="System Issue">System Issue</option>
+                    <option value="Training Support">Training Support</option>
+                    <option value="General Question">General Question</option>
+                </select>
+
+                <label for="message">Short Message</label>
+                <textarea id="message" rows="5" placeholder="Type your message here"></textarea>
+                <p id="characterCount" class="hint">0 characters typed</p>
+
+                <div class="button-row">
+                    <button type="submit">Submit Request</button>
+                    <button type="button" id="clearButton" class="secondary">Clear List</button>
+                </div>
+            </form>
+            <p id="outputMessage" class="message"></p>
+
+            <section class="submissions">
+                <h2>Recent Valid Submissions</h2>
+                <ul id="submissionList"></ul>
+            </section>
+
+            <section class="api-section">
+                <h2>Sample API Data</h2>
+                <button id="loadApiButton" type="button">Load Sample Users</button>
+                <div id="apiOutput" class="cards"></div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

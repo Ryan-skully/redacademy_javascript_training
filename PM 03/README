@@ -1,0 +1,20 @@
+Please note that the evidence folder for PM03 has been split into multiple word documents.
+Reason for this is because it is how the testbook for PM03 what it laid out.
+Check file name will have a list of what activity screenshots are included in them.
+
+- api-data-displayed
+Contains activity Practical Skill 10: Suggested API Practical: Display Data from an API.
+
+- console-debugging
+This file contains screenshots when orginal code provided for the Activity did not work and needed to be debugged to completed the activity.
+Contains the following activities Practical Skill 2: Debugging with Console and Browser Developer Tools, Practical Skill 4: DOM Manipulation, Practical Skill 5: Events, Practical Skill 6: Form Validation.
+
+- Ryan Ward PM-03
+Contains the following activities Tools, Files and Project Setup, Practical Skill 3: Error hand with try…catch, Practical Skill 4: DOM Manipulation, Practical Skill 5: Events, Practical Skill 6: Form Validation, Main Practical Build: Department Contact Form with Validation, Practical Skill 11: Light Animation and Multimedia Awareness.
+ 
+- validation-error
+This file contains screenshots the code was put in but errors would appear. 
+Contains the following Practical Skill 1: Reading Error Messages, Practical Skill 4: DOM Manipulation, Practical Skill 5: Events.
+
+- validation-success
+This file contains the screenshot after the code has been debugged and webpage now responded successfully. Contains the following Practical Skill 1: Reading Error Messages, Practical Skill 4: DOM Manipulation, Practical Skill 5: Events, Practical Skill 6: Form Validation
