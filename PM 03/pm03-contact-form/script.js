@@ -228,5 +228,27 @@ async function loadTasks() {
 
 loadTasks();
 
+const detailsButton = document.querySelector("#detailsButton");
+const detailsPanel = document.querySelector("#detailsPanel");
+
+//Example HTML needed:
+//<button id="detailsButton">Show Details</button>
+//<div id="detailsPanel" hidden> Extra support information..</div>
+
+detailsButton.addEventListener("click", function(){
+    detailsPanel.hidden = !detailsPanel.hidden;
+});
+
+const outputMessage = document.getElementById("outputMessage");
+
+function showSuccessAnimation() {
+    outputMessage.classList.add("fade-in");
+    console.log("Success animation triggered!");
+
+    setTimeout(function() {
+        outputMessage.classList.remove("fade-in");
+    }, 500);
+}
+
 console.log(isValidEmail("user@example.com")); //true
 console.log(isValidEmail("userexample.com")); //fasle
