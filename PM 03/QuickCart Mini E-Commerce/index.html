@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, intitial-scale=1.0">
-        <title>QuickCart Mini E-Commerce</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Sets the page width correctly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickCart Mini E-Commerce</title>
+
+    <!-- Connects the CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <main>
         <h1 id="pageTitle">QuickCart Sale</h1>
 
+        <!-- Displays products available for sale -->
         <section>
             <h2>Products on Sale</h2>
             <div id="productList"></div>
         </section>
 
+        <!-- Displays the cart, item count and total price -->
         <section>
-            <h2>Your Cart(<span id="cartCourt">2</span>)</h2>
+            <h2>Your Cart (<span id="cartCount">0</span>)</h2>
             <ul id="cartList"></ul>
             <p>Total: R<span id="cartTotal">0.00</span></p>
         </section>
 
+        <!-- Displays success and error messages -->
         <p id="message"></p>
+
+        <!-- Allows the user to add a new sale product -->
+        <form id="saleForm">
+            <input
+                id="productName"
+                type="text"
+                placeholder="Product name"
+                required
+            >
+
+            <input
+                id="productPrice"
+                type="number"
+                placeholder="Price"
+                min="0.01"
+                step="0.01"
+                required
+            >
+
+            <button type="submit">Add Sale Item</button>
+        </form>
+
+        <!-- Allows users to search the sale products -->
+        <input
+            id="searchBox"
+            type="text"
+            placeholder="Search sale products"
+        >
     </main>
+
+    <!-- Loads the JavaScript after the HTML elements -->
     <script src="script.js"></script>
+</body>
 </html>

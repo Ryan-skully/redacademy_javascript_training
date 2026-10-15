@@ -1,9 +1,7 @@
-/*Add CSS Classes with JavaScript
-
-
 /* Styles the entire page */
 body {
     margin: 0;
+    padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
     color: #1f2937;
@@ -14,12 +12,45 @@ h1 {
     color: #800c10;
 }
 
+/* Styles each product card */
 .product-card {
     border: 1px solid #ddd;
     padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: white;
 }
 
+/* Highlights products with low stock */
 .low-stock {
     border: 2px solid orange;
     background: #fff5dd;
+}
+
+/* Adds spacing to buttons */
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Styles the cart list items */
+#cartList li {
+    margin-bottom: 10px;
+}
+
+/* Styles the search box and form inputs */
+input {
+    margin: 5px;
+    padding: 8px;
+}
+
+/* Styles success messages */
+.message.success {
+    color: green;
+}
+
+/* Styles error messages */
+.message.error {
+    color: #b91c1c;
 }
