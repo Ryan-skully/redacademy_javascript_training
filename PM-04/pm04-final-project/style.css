@@ -1,0 +1,228 @@
+/* This is to style the body id from the HTML */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #dadada;
+    margin: 0;
+    padding: 40px;
+}
+
+/* This section will be used to add styling to the form-container class id from the HTML */
+.form-container {
+    width: 750px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(44, 44, 44);
+}
+/* Updates your H1 heading tag in your HTML */
+h1 {
+   text-align: center;
+   color: #e01f26;
+}
+
+/* Updates your H1 heading tag in your HTML */
+h2 {
+   text-align: center;
+}
+
+/* Updates your form-group id class in your HTML */
+.form-group {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* These lables are found inside of your div classes */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* This will update your input section for the text area  */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+    font-size:16px;
+}
+
+/* Submit Button styling */
+button {
+    width:100%;
+    padding:12px;
+    background:#ca0707;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* Disabled button color */
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+
+/* Adds functionality for hovering over a button when it is not disabled*/
+button:hover:not(:disabled){
+    background-color: #7c0505;
+}
+/* Note: Classes are defined with a . and ID's are defined with a # */
+/* Added a section for the HTML section to include the JS output of the client request  */
+.summary{
+    margin-top:35px;
+    padding:20px;
+    background: #dadada;
+    border-radius:15px;
+    box-shadow: 0 0 15px rgb(44, 44, 44);
+}
+
+/* Adds functionality to the id request-list*/
+.request-list{
+    margin-top:30px;
+}
+/* Adds functionality to the unordered list for the id request-list */
+.request-list li{
+    background: #dadada;
+    margin-bottom:10px;
+    padding:15px;
+    list-style:none;
+}
+
+/* Custom config for the request list based on the priority chosen */
+.request-list li.Low {
+    border-left: 5px solid lightskyblue;
+}
+.request-list li.Medium {
+    border-left: 5px solid green;
+}
+.request-list li.High {
+    border-left: 5px solid yellow;
+}
+.request-list li.Critical {
+    border-left: 5px solid red;
+}
+
+
+/* Adding Priority function message styling */
+#priorityLevel{
+   margin-top: 20px;
+   padding: 15px;
+   border-radius: 10px;
+   font-weight: bold;
+   text-align: center; 
+}
+
+/* Styling for the ticket action buttons */
+.ticket-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* Styling for buttons inside each ticket */
+.ticket-actions button {
+    width: auto;
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Change priority button */
+.change-priority-button {
+    background-color: #2459a9;
+}
+
+/* Resolve ticket button */
+.resolve-ticket-button {
+    background-color: #237a3b;
+}
+
+/* Disabled action buttons */
+.ticket-actions button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+/* Ticket status text */
+.ticket-status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Resolution message */
+.resolution-message {
+    background-color: #e0f2e5;
+    border-left: 5px solid #237a3b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Reason for changing priority */
+.priority-reason {
+    background-color: #e5edfa;
+    border-left: 5px solid #2459a9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Make the form fit smaller screens */
+@media (max-width: 850px) {
+    body {
+        padding: 15px;
+    }
+
+    .form-container {
+        width: auto;
+        max-width: 750px;
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Styling for the ticket status summary */
+.ticket-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(44, 44, 44);
+}
+
+/* Styling for the number of open tickets */
+#openTicketCount {
+    background-color: #fff0cc;
+    color: #805500;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for the number of resolved tickets */
+#resolvedTicketCount {
+    background-color: #dff3e4;
+    color: #17652b;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
